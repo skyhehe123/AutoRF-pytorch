@@ -19,24 +19,26 @@ Implicit neural reconstruction, manipulation and scene composition for 3D object
 ## Quick Start
 
 Download KITTI data and here we only use image data
+```plain
 └── DATA_DIR
        ├── training   <-- training data
        |   ├── image_2
        |   ├── label_2
        |   ├── calib
-       
+```     
 Run the preprocess scripts, which produce instance mask using pretrained PointRend model.      
 ```
 python scripts/preproc.py
 ```
 After this, you will have a certain directory which contains the image, mask and 3D anotation of each instance.
+```plain
 └── DATA_DIR
        ├── training
        |   ├── nerf
            |   ├── 0000008_01_patch.png
            |   ├── 0000008_01_mask.png
            |   ├── 0000008_01_label.png
-
+```
 
 Run the following sciprts to train a nerf model
 
