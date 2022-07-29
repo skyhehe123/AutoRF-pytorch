@@ -43,13 +43,13 @@ After this, you will have a certain directory which contains the image, mask and
 Run the following sciprts to train a nerf model
 
 ```
-python scripts/train.py
+python src/train.py
 ```
 
 After training for serveral iterations (enough is ok), you can find the checkpoint file in the ``output'' folder, and then you can perform scene rendering by running
 
 ```
-python scripts/train.py --demo
+python src/train.py --demo
 ```
 
 
