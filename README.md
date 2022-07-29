@@ -1,5 +1,5 @@
-# ObjectNeuralRender
-Implicit neural reconstruction, manipulation and scene composition for 3D object. 
+# AutoRF (unofficial)
+This is unofficial implementation of "AutoRF: Learning 3D Object Radiance Fields from Single View Observations", which performs implicit neural reconstruction, manipulation and scene composition for 3D object. In this repo, we use KITTI dataset.
 
 <img src="output/000008.png" alt="drawing" width="500"/>
 <img src="output/scene.gif" alt="drawing" width="500"/>
@@ -56,3 +56,5 @@ python scripts/train.py --demo
 ## Notice ###
 
 You can adjust the manipulaion function (in kitti.py) by your self, here I only provide the camera pushing/pulling and instance rotation.
+
+
