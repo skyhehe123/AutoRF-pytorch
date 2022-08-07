@@ -221,9 +221,9 @@ def collate_lambda_train(batch, ray_batch_size=1024):
         rgbs.append(rgb_gt)
     
     imgs = torch.stack(imgs)
-    rgbs = torch.stack(rgbs)  
-    msks = torch.stack(msks)
-    rays = torch.stack(rays)  
+    rgbs = torch.stack(rgbs, 1)  
+    msks = torch.stack(msks, 1)
+    rays = torch.stack(rays, 1)  
     
     return imgs, rays, rgbs, msks
 
